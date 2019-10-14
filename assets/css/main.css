@@ -1,0 +1,344 @@
+:root {
+    --transition-1: all 0.3s ease-in-out;
+    --transition-2: all 0.1s ease-in-out;
+}
+
+html {
+    font-size: 1rem;
+    font-family: "Hind", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    font-family: "Hind", sans-serif !important;
+}
+
+.contaier {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container_alt{
+
+}
+
+.header {
+    /*text-align: center;*/
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.bg{
+    padding: 35px;
+    background: rgb(245,177,195);
+    background: linear-gradient(170deg, rgba(245,177,195,1) 0%, rgba(245,108,142,1) 100%);
+    border-bottom-left-radius: 70% 10%;
+    border-bottom-right-radius: 70% 10%;
+    height: 230px;
+}
+
+#autoComplete_results_list {
+    height: 45vh;
+    overflow: auto;
+}
+.pop_ingredients_sect{
+    padding: 35px;
+}
+    .pop_ingredients_sect h3{
+        color: #555;
+        font-size:20px;
+    }
+
+    .pop_ingredients_wrapper{
+        margin-top: 25px;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+    }
+
+    .pop_ingredients_sect{
+       height:300px;
+
+
+    }
+    .ingredient_box{
+        padding: 10px;
+        border-radius: 70px;
+        background: #fff;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+        width:64px;
+        height:110px;
+        text-align: center;
+        font-size:11px;
+        float:left;
+        margin-right: 15px;
+    }
+    .ingredient_box:last-child{
+        margin-right: 0;
+    }
+        .icon_box{
+            width:44px;
+            height:44px;
+            margin-bottom: 15px;
+            background: #f7f7f7;
+            border-radius: 50%;
+            text-align: center;
+
+        }
+        .icon_box i.fa-carrot{
+            margin-top: 11px;
+            font-size: 20px;
+            color:#FB9751;
+        }
+        .icon_box i.fa-apple-alt{
+            margin-top: 11px;
+            font-size: 20px;
+            color: #D74633;
+        }
+        .icon_box i.fa-leaf{
+            margin-top: 12px;
+            font-size: 18px;
+            color: #8DC354;
+        }
+        .icon_box i.fa-lemon{
+            margin-top: 12px;
+            font-size: 18px;
+            color: #E4AF2F;
+        }
+
+
+.no_result {
+    margin: 0.15rem auto;
+    padding: 0.6rem;
+    max-width: 280px;
+    border: 0.05rem solid #e3e3e3;
+    list-style: none;
+    text-align: left;
+    font-size: 1.1rem;
+    color: rgb(123, 123, 123);
+    transition: all 0.1s ease-in-out;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    outline: none;
+  }
+
+.no_result:hover {
+    cursor: default;
+    background-color: #fff;
+    border: 0.05rem solid #e3e3e3;
+}
+
+.no_result:focus {
+    cursor: default;
+    background-color: #fff;
+    border: 0.05rem solid #e3e3e3;
+}
+
+h1 {
+    color: rgba(255, 122, 122, 1);
+    transition: var(--transition-1);
+}
+
+h1.logo{
+    font-family: 'Slabo 27px', sans-serif;
+    font-family: 'Hi Melody', sans-serif;
+    /*font-family: 'Itim', sans-serif;*/
+    color: #fff;
+    font-size:38px;
+    margin: 0;
+    margin-bottom: 30px;
+    /*font-weight: 400;*/
+
+}
+
+h1.logo span{
+    color: #feebeb;
+}
+
+.bg h2{
+    font-weight: 300;
+    color: #fff;
+    font-size:20px;
+    line-height: 26px;
+}
+
+h1>a {
+    text-decoration: none;
+    color: rgba(255, 122, 122, 1);
+}
+
+h1>a::selection {
+    color: rgb(255, 122, 122);
+}
+
+h4 {
+    margin-bottom: 5px;
+    color: #ffc6c6;
+}
+
+h4::selection {
+    color: #ffc6c6;
+}
+
+.recipe_sect{
+    margin-top: 40px;
+    color:#555;
+}
+
+h2.recipe_title{
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 50px;
+    color: rgba(245,108,142,1);
+}
+
+.recipe_content p strong{
+    font-family: 'Merriweather', serif;
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgba(245,108,142,1);
+}
+.recipe_content .directions p strong{
+    display: inline;
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    color: #555;
+    /*margin-top: 30px;*/
+}
+.recipe_content .directions p{
+    margin-top: 20px;
+}
+
+.recipe_content{
+    font-size: 16px;
+}
+
+.github-corner {
+    transition: var(--transition-1);
+}
+
+.mode {
+    margin-top: 20px;
+}
+
+.toggele {
+    display: flex;
+    position: abolute;
+    border: 1px solid #ffc6c6;
+    height: 35px;
+    width: 120px;
+    border-radius: 50px;
+    justify-content: flex-start;
+    align-content: center;
+    transition: var(--transition-1);
+}
+
+.toggeler {
+    display: grid;
+    cursor: pointer;
+    background-color: rgba(255, 198, 198, 1);
+    color: #fff;
+    height: 25px;
+    width: 60px;
+    border-radius: 50px;
+    margin: 5px;
+    text-align: center;
+    align-content: center;
+    align-self: flex-start;
+    transition: var(--transition-1);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.toggeler:hover {
+    width: 70px;
+    background-color: rgba(255, 122, 122, 0.7);
+}
+
+.toggeler::selection {
+    color: #fff;
+}
+
+.strict {
+    display: inline;
+}
+
+.loose {
+    display: inline;
+}
+
+.selection {
+    margin-top: 25vh;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffc6c6;
+    transition: var(--transition-1);
+}
+
+.selection::selection {
+    color: #64ceaa;
+}
+
+.footer {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    bottom: 2rem;
+    color: rgb(147, 147, 147);
+    justify-content: center;
+    transition: var(--transition-1);
+}
+
+.footer>div>a {
+    text-decoration: none;
+    color: rgb(147, 147, 147);
+}
+
+.footer>div>a::selection {
+    color: rgba(255, 122, 122, 1);
+}
+
+.copyrights {
+    font-size: 0.8rem;
+}
+
+.copyrights::selection {
+    color: rgb(147, 147, 147);
+}
+
+.copyrights>a::selection {
+    color: rgb(147, 147, 147);
+}
+
+@media only screen and (max-width: 600px) {
+    .selection {
+        margin-top: 15vh;
+    }
+
+    .footer {
+        bottom: 1.5rem;
+        transition: var(--transition-1);
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .footer {
+        display: none;
+    }
+}
